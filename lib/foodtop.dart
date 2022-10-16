@@ -20,7 +20,7 @@ class _burgerTopState extends State<burgerTop> {
         children: [
           Container(
             width: 415,
-            height: 289,
+            height: 288,
             decoration: BoxDecoration(
                 image: DecorationImage(image: AssetImage("assets/menu.png"))),
           ),
