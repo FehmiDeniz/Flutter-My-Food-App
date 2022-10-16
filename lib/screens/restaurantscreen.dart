@@ -122,10 +122,7 @@ class _testingState extends State<testing> {
                 ),
               ],
             ),
-            Positioned(
-                left: 20,
-                top: MediaQuery.of(context).size.height - 75,
-                child: viewCard())
+            Positioned(left: 20, bottom: 405, child: viewCard())
           ],
         ),
       ),
