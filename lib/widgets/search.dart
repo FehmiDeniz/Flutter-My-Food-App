@@ -13,7 +13,7 @@ class _searchWidgetState extends State<searchWidget> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Container(
           margin: EdgeInsets.only(left: 10),
@@ -37,7 +37,7 @@ class _searchWidgetState extends State<searchWidget> {
           ),
         ),
         Container(
-            margin: EdgeInsets.only(right: 32),
+            margin: EdgeInsets.only(right: 18),
             decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
@@ -47,7 +47,7 @@ class _searchWidgetState extends State<searchWidget> {
                       spreadRadius: 2,
                       blurRadius: 7),
                 ]),
-            width: 54,
+            width: 50,
             height: 40,
             child: ImageIcon(AssetImage("assets/filter.png")))
       ],

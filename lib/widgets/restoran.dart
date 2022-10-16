@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:myfoodapp/screens/restaurantscreen.dart';
 
 class Restoran extends StatefulWidget {
   const Restoran(
@@ -46,14 +47,20 @@ class _RestoranState extends State<Restoran> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Container(
-                  width: 97,
-                  height: 97,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    image: DecorationImage(
-                        image: AssetImage(widget.restoranImage),
-                        fit: BoxFit.cover),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => testing()));
+                  },
+                  child: Container(
+                    width: 97,
+                    height: 97,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      image: DecorationImage(
+                          image: AssetImage(widget.restoranImage),
+                          fit: BoxFit.cover),
+                    ),
                   ),
                 ),
                 Column(
